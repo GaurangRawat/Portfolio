@@ -1,0 +1,180 @@
+video
+{
+    opacity: 1;
+    position: absolute;
+    z-index: -100;
+
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.front
+{
+    color: var(--white-color);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);/* for dimming the video */
+}
+
+.front h1
+{
+    font-size: 4rem;
+    
+}
+.front h2
+{
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    text-indent: 1.5rem;
+}
+.front .button{
+    display: inline-flex;
+}
+.front .button a{
+    justify-content: center;
+}
+.front .button span{
+    justify-content: center;
+}
+@media(max-width:850px)
+{
+    .front h1
+    {
+        font-size: 180%;
+    }
+    .front h2
+    {
+        font-size: 70%;
+        letter-spacing:1.5rem;
+    }
+}
+
+/* ABOUT ME SECTION */
+
+.about-me
+{
+    box-sizing: border-box;
+    /* min-height: 100vh; */
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+.about-me img
+{
+    height: 35rem;
+    width: auto;
+}
+.about-me-content
+{
+    /* background-color: rebeccapurple; */
+    align-items: start;
+    padding: 2rem;
+    
+    width: 25rem;
+}
+.about-me-content h1
+{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.about-me-content h2
+{
+    font-weight: 900;
+    font-size: 2.25rem;
+    opacity: 1;
+    font-weight: bolder;
+    margin: 0rem 0rem -0.45rem 0rem;
+    color: rgb(239, 131, 68);
+}
+.about-me-content h3
+{
+    margin:-0.5rem 0rem 0rem 0rem ;
+    font-weight: 900;
+    color: var(--accent-color);
+}
+.about-me-content p
+{
+    margin: 1rem 0rem 0rem 0rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    opacity: 1;   
+    color: rgb(0, 255, 0); 
+}
+@media(max-width:500px)
+{
+    .card img {
+        height: 18rem;
+    }
+    .about-me-content{
+        width: 100%;
+    }
+    .about-me-content h1
+    {
+        font-size: 2rem;
+    }
+    .about-me-content h2
+    {
+        font-size: 1.25rem;
+        margin: 0rem 0rem -0.425rem 0rem;
+    }
+    .about-me-content h3
+    {
+        font-size: .8rem;
+        margin:-0.25rem 0rem 0rem 0rem ;
+        color: var(--accent-color);
+    }
+    .about-me-content p
+    {
+        margin: 1rem 0rem 0rem 0rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* SKILLS SECTION */
+.card > .skill-bar
+{
+    margin: 1rem;
+}
+.card > .skill-bar > .skill-bar-title
+{
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+.card > .skill-bar > .skill-bar-meter
+{
+    margin: .25rem 0rem;
+    height: .5rem;
+    border-radius: 2rem;
+    background-color: var(--accent-color-dark); 
+}
+.card > .skill-bar > .skill-bar-meter > .skill-bar-meter-fill
+{
+    /* width: 50%; */
+    height: 100%;
+    border-radius: 2rem;
+    left: 0;
+    transform-origin: left;
+    background-color: var(--accent-color);  
+    transform: scaleX(0);
+
+}
+.card > .skill-bar > .skill-bar-meter > .skill-bar-meter-fill.show
+{
+    transition: all 800ms cubic-bezier(.89,.46,.06,.92);
+    transform: scaleX(1); 
+}
+
+@media(max-width:500px)
+{
+    .card > .skill-bar > .skill-bar-title
+    {
+        font-size: .8rem;
+    }
+}
+
+/* EXPERIENCE */

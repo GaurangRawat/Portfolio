@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me- Gaurang a.k.a AdiosJin</title>
+    <link rel="icon" type="image/x-icon" href="Resouces/favicon.ico">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/theme.js" defer></script>
+    <script src="js/skills.js" defer></script>
+    <script src="js/intersection.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+</head>
+<body class="dark-color transition">
+    <header>
+        <div class="navbar top">
+            <img class="nav-item flex logo"  src="images/Logo.png">
+            <div class="flex nav-menu">
+                <div class="nav-item flex" id="theme-btn"><span class="material-icons">dark_mode</span></div>
+                <a class="nav-item flex" href="#home">Home</a>
+                <a class="nav-item flex" href="#about-me">About-Me</a>
+                <a class="nav-item flex" href="#skills">Skills</a>
+                <a class="nav-item flex" href="#contact">Contact</a>
+                
+                <a href=""></a>
+            </div>
+            <div class="hamburger-container flex">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="front flex col" id="home">
+            <video autoplay loop muted plays-inline src="images/Cool.mp4" type="video/mp4" class="back"> 
+            </video>
+            <h2>Hi!!</h2>
+            <h1>This is AdiosJin</h1>
+            <div class="button outline">
+                <span class="material-icons">download</span>
+                <a href="cv/cv.pdf" download="cv.pdf">Download CV</a>
+            </div>
+
+        </div>
+        <div class="container" id="about-me">
+            <h1 class="section-title animate">Who? =Me</h1>
+            <div class="about-me flex">
+                <img src="images/gojo.png" class="animate" style="z-index: 1;">
+                <div class="about-me-content flex col">
+                    <h2 class="animate delay-1">Nice to meet you !</h2>
+                    <h1 class="animate delay-2">I am Gaurang</h1>
+                    <h3 class="animate delay-3">A.K.A  AdiosJin</h3>
+                    <p class="animate delay-4"><b>Frontend Web Developer</b><br>a knack for transforming ideas into visually stunning and functional websites. I'm dedicated to building creative with technically proficient web applications.I am open to new ideas, approachable and insightful. Looking forward to forging a productive partnership with you soon. </p>
+                    <div class="button accent"  onclick="location.href='#contact';">Contact Me</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="skills">
+            <h1 class="section-title animate">SKILLS</h1>
+            <div class="cards-container" id="skills-container">
+            </div>
+        </div>
+        <div class="container" id="my-work">
+            <h1 class="section-title animate">PROJECTS</h1>
+            <div class="cards-container">
+                <div class="card center shadow animate delay-3" style="cursor: pointer;" onclick="window.open('https://gaurangrawat.github.io/Grand-Recovery/')">
+                    <img src="images/GR.png" class="background"/>
+                    <div class="card-title">Grand Recovery</div>
+                </div>
+                <div class="card center shadow animate delay-3" style="cursor: pointer;" onclick="window.open('')">
+                    <img src="images/crypto.png" class="background"></img>
+                    <div class="card-title">TheCryptoShow <br>(in progress)</div>
+                </div>
+                <div class="card center shadow animate right delay-4" style="cursor: pointer;" onclick="window.open('')">
+                    <img src="images/reverse.png" class="background"></img>
+                    <div class="card-title">Reverse <br>(in progress)</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="contact">
+            <h1 class="section-title animate">Get In Touch:</h1>
+            <div class="cards-container">
+                <div class="card center shadow animate right delay-4" style="cursor: pointer;" onclick="window.open('www.linkedin.com/in/gaurang-rawat-14b938253')">
+                    <img src="images/LinkedIn.png" class="background"></img>
+                    <div class="card-title">LINKEDIN</div>
+                </div>
+                <div class="card center shadow animate delay-4" style="cursor: pointer;" onclick="window.open('mailto:Gaurangrawat2003@gmial.com')">
+                    <img src="images/Gmail.png" class="background"></img>
+                    <div class="card-title">MAIL ME</div>
+                </div>
+                <div class="card center shadow animate delay-4" style="cursor: pointer;" onclick="window.open('https://web.whatsapp.com/')">
+                    <img src="images/Whatsapp.png" class="background"></img>
+                    <div class="card-title">Whatsapp:<br>+91 7827227065</div>
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer class="flex col accent-color" style="text-align: center;">
+        <p>Designed and Developed by AdiosJin © 2024</p>
+    </footer>
+</body>
+</html>
